@@ -1,11 +1,10 @@
 package com.wxit.gmall.user.controller;
 
-import com.wxit.gmall.user.bean.UmsMember;
-import com.wxit.gmall.user.bean.UmsMemberReceiveAddress;
-import com.wxit.gmall.user.service.UserService;
+import com.wxit.gmall.bean.UmsMember;
+import com.wxit.gmall.service.UserService;
+import com.wxit.gmall.bean.UmsMemberReceiveAddress;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 

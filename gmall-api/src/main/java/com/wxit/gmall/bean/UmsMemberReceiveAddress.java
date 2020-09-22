@@ -1,4 +1,4 @@
-package com.wxit.gmall.user.bean;
+package com.wxit.gmall.bean;
 
 import javax.persistence.Id;
 import java.io.Serializable;

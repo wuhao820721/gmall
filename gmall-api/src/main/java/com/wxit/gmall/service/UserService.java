@@ -1,7 +1,7 @@
-package com.wxit.gmall.user.service;
+package com.wxit.gmall.service;
 
-import com.wxit.gmall.user.bean.UmsMember;
-import com.wxit.gmall.user.bean.UmsMemberReceiveAddress;
+import com.wxit.gmall.bean.UmsMember;
+import com.wxit.gmall.bean.UmsMemberReceiveAddress;
 
 import java.util.List;
 
