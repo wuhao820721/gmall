@@ -1,12 +1,12 @@
 package com.wxit.gmall.user.service.impl;
 
-import com.wxit.gmall.service.UserService;
+import com.alibaba.dubbo.config.annotation.Service;
 import com.wxit.gmall.bean.UmsMember;
 import com.wxit.gmall.bean.UmsMemberReceiveAddress;
+import com.wxit.gmall.service.UserService;
 import com.wxit.gmall.user.mapper.UmsMemberReceiveAddressMapper;
 import com.wxit.gmall.user.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
