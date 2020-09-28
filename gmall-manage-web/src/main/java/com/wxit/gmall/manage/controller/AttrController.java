@@ -2,6 +2,8 @@ package com.wxit.gmall.manage.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.wxit.gmall.bean.PmsBaseAttrInfo;
+import com.wxit.gmall.bean.PmsBaseAttrValue;
+import com.wxit.gmall.bean.PmsBaseSaleAttr;
 import com.wxit.gmall.service.AttrService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -27,5 +29,32 @@ public class AttrController {
 
         List<PmsBaseAttrInfo> pmsBaseAttrInfos = attrService.attrInfoList(catalog3Id);
         return pmsBaseAttrInfos;
+    }
+
+    @RequestMapping("saveAttrInfo")
+    @ResponseBody
+    public String saveAttrInfo(@RequestBody PmsBaseAttrInfo pmsBaseAttrInfo){
+
+        String success = attrService.saveAttrInfo(pmsBaseAttrInfo);
+
+        return "success";
+    }
+
+    @RequestMapping("getAttrValueList")
+    @ResponseBody
+    public List<PmsBaseAttrValue> getAttrValueList(String attrId) {
+
+        List<PmsBaseAttrValue> pmsBaseAttrValues = attrService.getAttrValueList(attrId);
+
+        return pmsBaseAttrValues;
+    }
+
+    @RequestMapping("baseSaleAttrList")
+    @ResponseBody
+    public List<PmsBaseSaleAttr> baseSaleAttrList(){
+
+        List<PmsBaseSaleAttr> pmsBaseSaleAttrs = attrService.baseSaleAttrList();
+
+        return pmsBaseSaleAttrs;
     }
 }
